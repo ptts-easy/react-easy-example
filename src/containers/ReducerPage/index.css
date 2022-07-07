@@ -1,0 +1,37 @@
+.reducer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  text-align: left;
+}
+
+.reducer li {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: calc(5px + 2vmin);
+}
+
+/* Change the link color to #111 (black) on hover */
+.reducer li:hover {
+  background-color: #555;
+  color: white;
+}
+
+.reducer input[type=checkbox] {
+  cursor: pointer;
+}
+
+.reducer table {
+  width: 100%;
+}
+
+.reducer td {
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}
