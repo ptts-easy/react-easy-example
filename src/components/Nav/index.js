@@ -5,15 +5,17 @@ import './index.css';
 const Nav = () => {
   const menu = [
     ["", "Layout"],
+    ["route", "Route"],
     ["state", "State"],
     ["prop", "Prop"],
+    ["contain", "Contain"],
     ["ref", "Ref"],
     ["context", "Context"],
     ["reducer", "Reducer"],
-    ["online", "Online"],
     ["redux", "Redux"],
-    ["sass", "Sass"],
     ["bootstrap", "Bootstrap"],
+    ["sass", "Sass"],
+    ["online", "Online"],
     ["auth", "Auth"]
   ];
 

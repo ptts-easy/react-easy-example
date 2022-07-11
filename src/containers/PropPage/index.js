@@ -24,7 +24,7 @@ const Child = (props) => {
   );
 }
 
-const Parent = (prop) => {
+const Parent = (props) => {
   const [color, setColor] = useState("white");
   const [childColor, setChildColor] = useState("white");
 
@@ -50,7 +50,7 @@ const Parent = (prop) => {
     return () => {
       console.log("Finishs any time prop value changes");
     }
-  }, [prop]);
+  }, [props]);
 
   useEffect(() => {
     console.log("Runs on the first render And any time color value changes");
@@ -87,7 +87,7 @@ const Parent = (prop) => {
 const PropPage = () => {
   return (
     <div style={{border: "5px solid white"}} className="props">
-      This is PropPage.
+      This is PropPage(useEffect).
       <Parent />
     </div>   
   );

@@ -1,3 +1,16 @@
+const initialTodos = [
+  {
+    id: 1,
+    title: "Todo 1",
+    complete: false,
+  },
+  {
+    id: 2,
+    title: "Todo 2",
+    complete: false,
+  },
+];
+
 const InitNumListStates = [
   {
     title: "0",
@@ -61,4 +74,6 @@ const InitTenStates = {
   sum: 0
 };
 
-export default {InitNumListStates, InitSumStates, InitTenStates};
+const States = {initialTodos, InitNumListStates, InitSumStates, InitTenStates};
+
+export default States;

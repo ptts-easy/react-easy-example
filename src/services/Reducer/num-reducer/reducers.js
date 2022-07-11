@@ -1,10 +1,25 @@
 import ActionTypes from './types';
 
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "COMPLETE":
+      return state.map((todo) => {
+        if (todo.id === action.id) {
+          return { ...todo, complete: !todo.complete };
+        } else {
+          return todo;
+        }
+      });
+    default:
+      return state;
+  }
+};
+
 const clickNumReducer = (state , action) => {
   switch (action.type) {
     case ActionTypes.CLICK_NUMLIST:
       return state.map((item) => {
-        if (item.weight === action.num) {
+        if (item.weight === action.num) {    
           return { ...item, check: !item.check };
         } else {
           return item;
@@ -31,7 +46,7 @@ const complateTenReducer = (state , action) => {
   switch (action.type) {
     case ActionTypes.COMPLATE_TEN:
       state.sum = action.sum;
-      if (action.sum == 10) {
+      if (action.sum === 10) {
         state.title = "yes";
       } else {
         state.title = "no";
@@ -42,4 +57,6 @@ const complateTenReducer = (state , action) => {
   }
 };
 
-export default {clickNumReducer, calcSumReducer, complateTenReducer};
+const Reducers =  {reducer, clickNumReducer, calcSumReducer, complateTenReducer};
+
+export default Reducers;

@@ -7,23 +7,21 @@ import './index.css';
 
 const ReducerPage = () => {
 
-  const [colorListStates, dispatch] = useReducer(Reducers.clickReducer, States.InitColorListStates);
+  const [numListStates, dispatch] = useReducer(Reducers.clickNumReducer, States.InitNumListStates);
 
-//  const [white, dispatch_2] = useReducer(Reducers.whiteReducer, InitWhiteStates);
-
-  const changeColor = (newColor) => {
-    dispatch(Actions.clickColorItem(newColor));
+  const clickNum = (curNum) => {
+    dispatch(Actions.clickNumList(curNum.toString()));
   }
 
-  const handleComplete = (color) => {
+  const handleComplete = (curNum) => {
   };
 
-  const listItems = colorListStates.map((item) =>
-    <li key={item.title} style={{color: item.title}} onClick={() => changeColor(item.title)}>
+  const listItems = numListStates.map((item) =>
+    <li key={item.weight} onClick={() => clickNum(item.title)}>
       <input
         type="checkbox"
         checked={item.check}
-        onChange={() => handleComplete(item.title)}
+        onChange={() => handleComplete(item.weight)}
       />
       {item.title}
     </li>
@@ -36,12 +34,38 @@ const ReducerPage = () => {
       <tbody>
       <tr>
         <td><ul>{listItems}</ul></td>
-        <td><h1 style={{color: "white"}}>White color is white!</h1></td>
       </tr>
       </tbody>
       </table>
     </div>
   );
+
+/*
+  const [todos, dispatch] = useReducer(Reducers.reducer, States.initialTodos);
+
+  const handleComplete = (todo) => {
+    dispatch({ type: "COMPLETE", id: todo.id });
+  };
+
+  return (
+    <div style={{border: "5px solid white"}} className="reducer">
+      {
+        todos.map((todo) => (
+        <div key={todo.id}>
+          <label>
+            <input
+              type="checkbox"
+              checked={todo.complete}
+              onChange={() => handleComplete(todo)}
+            />
+            {todo.title}
+          </label>
+        </div>
+        ))
+      }
+    </div>
+  );
+*/  
 }
 
 export default ReducerPage;

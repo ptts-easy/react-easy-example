@@ -55,7 +55,7 @@ const ContextPage = () => {
 
   return (
     <ColorContext.Provider value={color}>
-      <div style={{border: "5px solid white"}} className="context">
+      <div style={{border: "5px solid white"}}>
         This is ContextPage.
         <ColorList color={color} change={setColor} />
         <Component1 />

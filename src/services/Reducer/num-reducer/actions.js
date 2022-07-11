@@ -22,4 +22,6 @@ const complateTen = (sum) => {
   };
 }
 
-export default {clickNumList, calcSum, complateTen};
+const Actions = {clickNumList, calcSum, complateTen};
+
+export default Actions;
