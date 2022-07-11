@@ -19,7 +19,7 @@ const clickNumReducer = (state , action) => {
   switch (action.type) {
     case ActionTypes.CLICK_NUMLIST:
       return state.map((item) => {
-        if (item.weight === action.num) {    
+        if (item.weight === Number(action.num)) {    
           return { ...item, check: !item.check };
         } else {
           return item;

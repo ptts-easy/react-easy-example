@@ -7,16 +7,14 @@ const Nav = () => {
     ["", "Layout"],
     ["route", "Route"],
     ["state", "State"],
-    ["prop", "Prop"],
+    ["prop", "Prop/Hook"],
     ["contain", "Contain"],
     ["ref", "Ref"],
     ["context", "Context"],
     ["reducer", "Reducer"],
     ["redux", "Redux"],
-    ["bootstrap", "Bootstrap"],
     ["sass", "Sass"],
-    ["online", "Online"],
-    ["auth", "Auth"]
+    ["bootstrap", "Bootstrap"],
   ];
 
   const listItems = menu.map((item) =>

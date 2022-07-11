@@ -17,7 +17,7 @@ const ReducerPage = () => {
   };
 
   const listItems = numListStates.map((item) =>
-    <li key={item.weight} onClick={() => clickNum(item.title)}>
+    <li key={item.weight} style={{backgroundColor: item.check==true ? "#555" : "#f1f1f1"}} onClick={() => clickNum(item.weight)}>
       <input
         type="checkbox"
         checked={item.check}

@@ -13,52 +13,52 @@ const initialTodos = [
 
 const InitNumListStates = [
   {
-    title: "0",
+    title: "Number-0",
     weight: 0,
     check: false,
   },
   {
-    title: "1",
+    title: "Number-1",
     weight: 1,
     check: false,
   },
   {
-    title: "2",
+    title: "Number-2",
     weight: 2,
     check: false,
   },
   {
-    title: "3",
+    title: "Number-3",
     weight: 3,
     check: false,
   },
   {
-    title: "4",
+    title: "Number-4",
     weight: 4,
     check: false,
   },
   {
-    title: "5",
+    title: "Number-5",
     weight: 5,
     check: false,
   },
   {
-    title: "6",
+    title: "Number-6",
     weight: 6,
     check: false,
   },
   {
-    title: "7",
+    title: "Number-7",
     weight: 7,
     check: false,
   },
   {
-    title: "8",
+    title: "Number-8",
     weight: 8,
     check: false,
   },
   {
-    title: "9",
+    title: "Number-9",
     weight: 9,
     check: false,
   },

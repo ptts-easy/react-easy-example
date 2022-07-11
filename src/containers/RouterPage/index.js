@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Nav from '../../components/Nav';
+import NoPage from '../NoPage';
 import LayoutPage from '../LayoutPage';
 import RoutePage from '../RoutePage';
 import StatePage from '../StatePage';
@@ -10,11 +11,8 @@ import RefPage from '../RefPage';
 import ContextPage from '../ContextPage';
 import ReducerPage from '../ReducerPage';
 import ReduxPage from '../ReduxPage';
-import BootstrapPage from '../BootstrapPage';
 import SassPage from '../SassPage';
-import OnlinePage from '../OnlinePage';
-import AuthPage from '../AuthPage';
-import NoPage from '../NoPage';
+import BootstrapPage from '../BootstrapPage';
 
 import {Component1, Component2, Component3, Component4, Component5, ErrorComponent} from '../RoutePage';
 
@@ -22,6 +20,7 @@ const RouterPage = () => {
   return (
     <Routes>
       <Route path="/" element={<Nav />}>
+        <Route path="*" element={<NoPage />} />
         <Route index element={<LayoutPage />} />
         <Route path="route" element={<RoutePage />}>
           <Route index element={<Component1 />} />
@@ -38,11 +37,8 @@ const RouterPage = () => {
         <Route path="context" element={<ContextPage />} />
         <Route path="reducer" element={<ReducerPage />} />
         <Route path="redux" element={<ReduxPage />} />
-        <Route path="bootstrap" element={<BootstrapPage />} />
         <Route path="sass" element={<SassPage />} />
-        <Route path="online" element={<OnlinePage />} />
-        <Route path="auth" element={<AuthPage />} />
-        <Route path="*" element={<NoPage />} />
+        <Route path="bootstrap" element={<BootstrapPage />} />
       </Route>
     </Routes>
   );
