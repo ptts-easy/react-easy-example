@@ -1,0 +1,64 @@
+.directive ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.directive li {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: calc(5px + 2vmin);
+}
+
+/* Change the link color to #111 (black) on hover */
+.directive li:hover {
+  background-color: #555;
+  color: white;
+}
+
+.directive table {
+  width: 100%;
+}
+
+.directive td {
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.class_white {
+  color: white;
+}
+
+.class_black {
+  color: black;
+}
+
+.class_red {
+  color: red;
+}
+
+.class_green {
+  color: green;
+}
+
+.class_blue {
+  color: blue;
+}
+
+.class_yellow {
+  color: yellow;
+}
+
+.class_magenta {
+  color: magenta;
+}
+
+.class_cyan {
+  color: cyan;
+}

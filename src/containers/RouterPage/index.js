@@ -3,11 +3,12 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from '../../components/Nav';
 import NoPage from '../NoPage';
 import BindPage from '../BindPage';
-import JSXPage from '../JSXPage';
+import DirectivePage from '../DirectivePage';
 import LayoutPage from '../LayoutPage';
 import RoutePage from '../RoutePage';
 import StatePage from '../StatePage';
 import PropPage from '../PropPage';
+import HookPage from '../HookPage';
 import ContainPage from '../ContainPage';
 import RefPage from '../RefPage';
 import ContextPage from '../ContextPage';
@@ -26,7 +27,7 @@ const RouterPage = () => {
         <Route path="" element={<Navigate to="/bind" replace />} />        
 //        <Route index element={<BindPage />} />
         <Route path="bind" element={<BindPage />} />
-        <Route path="jsx" element={<JSXPage />} />
+        <Route path="directive" element={<DirectivePage />} />
         <Route path="layout" element={<LayoutPage />} />
         <Route path="route" element={<RoutePage />}>
           <Route index element={<Component1 />} />
@@ -38,6 +39,7 @@ const RouterPage = () => {
         </Route>
         <Route path="state" element={<StatePage />} />
         <Route path="prop" element={<PropPage />} />
+        <Route path="lifecycle" element={<HookPage />} />
         <Route path="contain" element={<ContainPage />} />
         <Route path="ref" element={<RefPage />} />
         <Route path="context" element={<ContextPage />} />

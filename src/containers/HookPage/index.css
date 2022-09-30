@@ -1,0 +1,9 @@
+.props table {
+  width: 100%;
+}
+
+.props td {
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}

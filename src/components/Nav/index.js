@@ -5,13 +5,14 @@ import './index.css';
 const Nav = () => {
   const menu = [
     ["bind", "Bind"],
-    ["jsx", "JSX"],
-    ["ref", "Ref"],
+    ["directive", "Directive"],
     ["layout", "Layout"],
     ["route", "Route"],
     ["state", "State"],
-    ["prop", "Prop/Hook/Lifecycle"],
+    ["prop", "Prop"],
+    ["lifecycle", "Lifecylce(Hook)"],
     ["contain", "Contain"],
+    ["ref", "Ref"],
     ["context", "Context"],
     ["reducer", "Reducer"],
     ["redux", "Redux"],

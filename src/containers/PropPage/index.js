@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import ColorList from '../../components/ColorList';
 import './index.css';
@@ -28,46 +28,6 @@ const Parent = (props) => {
   const [color, setColor] = useState("white");
   const [childColor, setChildColor] = useState("white");
 
-  useEffect(() => {
-    console.log("Runs on every render");
-
-    return () => {
-      console.log("Finishs on every render");
-    }
-  });
-
-  useEffect(() => {
-    console.log("Runs only on the first render");
-
-    return () => {
-      console.log("Finishs only on the first render");
-    }
-  }, []);
-
-  useEffect(() => {
-    console.log("Runs on the first render And any time prop value changes");
-
-    return () => {
-      console.log("Finishs any time prop value changes");
-    }
-  }, [props]);
-
-  useEffect(() => {
-    console.log("Runs on the first render And any time color value changes");
-
-    return () => {
-      console.log("Finishs any time color value changes");
-    }
-  }, [color]);
-
-  useEffect(() => {
-    console.log("Runs on the first render And any time childColor value changes");
-
-    return () => {
-      console.log("Finishs any time childColor value changes");
-    }
-  }, [childColor]);
-
   return (
     <div style={{border: "5px dashed green"}}>
       This is Parent Component.
@@ -87,7 +47,7 @@ const Parent = (props) => {
 const PropPage = () => {
   return (
     <div style={{border: "5px solid white"}} className="props">
-      This is PropPage(useEffect).
+      This is PropPage.
       <Parent />
     </div>   
   );
