@@ -1,0 +1,5 @@
+$myColor: red;
+
+.sass h1 {
+  color: $myColor;
+}

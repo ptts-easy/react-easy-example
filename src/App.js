@@ -4,6 +4,8 @@ import './App.css';
 import MainPage from './containers/MainPage';
 
 function App() {
+  const title = "Learn React";
+
   return (
     <div className="App">
       <header className="App-header">
@@ -14,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {title}
         </a>
         <MainPage />
       </header>
